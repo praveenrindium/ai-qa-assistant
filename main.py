@@ -49,7 +49,7 @@ def get_openrouter_response(prompt: str, model: str = "google/gemini-2.0-flash-e
         #     return "Error: API key not configured. Please set OPENROUTER_API_KEY environment variable."
 
         headers = {
-            "Authorization": f"Bearer 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",
+            "Authorization": "Bearer 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",
             "Content-Type": "application/json"
         }
 
