@@ -43,13 +43,13 @@ def get_openrouter_response(prompt: str, model: str = "google/gemini-2.0-flash-e
     """Get response from OpenRouter API with optional system prompt"""
     try:
         # Get API key from environment for security
-        api_key = os.environ.get("OPENROUTER_API_KEY") or os.environ.get("OPENROUTER_KEY")
-        if not api_key:
-            logger.error("OPENROUTER_API_KEY not set in environment variables")
-            return "Error: API key not configured. Please set OPENROUTER_API_KEY environment variable."
+        # api_key = os.environ.get("OPENROUTER_API_KEY") or os.environ.get("OPENROUTER_KEY")
+        # if not api_key:
+        #     logger.error("OPENROUTER_API_KEY not set in environment variables")
+        #     return "Error: API key not configured. Please set OPENROUTER_API_KEY environment variable."
 
         headers = {
-            "Authorization": f"Bearer {api_key}",
+            "Authorization": f"Bearer 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",
             "Content-Type": "application/json"
         }
 
